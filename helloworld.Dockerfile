@@ -1,7 +1,7 @@
 # TUTUM [DEPRECATED] Docker Image [SMALL]
 FROM tutum/hello-world
 RUN rm /www/index.php
-COPY index.html /www/index.html
+COPY /helloworld/index.html /www/index.html
 
 # Other slightly larger (>100Mb) images below:
 
