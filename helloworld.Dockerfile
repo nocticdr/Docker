@@ -1,5 +1,8 @@
-# TUTUM [DEPRECATED] Docker Image [SMALL]
-FROM hello-world
+FROM nginx:alpine
+COPY /helloworld/index.html /usr/share/nginx/html/index.html
+
+
+# FROM hello-world
 # RUN rm /www/index.php
 # COPY /helloworld/index.html /www/index.html
 
