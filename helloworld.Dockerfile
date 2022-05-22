@@ -1,0 +1,14 @@
+# TUTUM [DEPRECATED] Docker Image [SMALL]
+FROM tutum/hello-world
+RUN rm /www/index.php
+COPY index.html /www/index.html
+
+# Other slightly larger (>100Mb) images below:
+
+# HTTPD Official Docker Image
+# FROM httpd:2.4
+# COPY index.html /usr/local/apache2/htdocs/
+
+# NGINX Official Docker Image
+# FROM nginx
+# /usr/share/nginx/html
