@@ -1,6 +1,6 @@
 FROM nginx:alpine
 COPY /helloworld/index.html /usr/share/nginx/html/index.html
-
+COPY /helloworld/giphy.gif /usr/share/nginx/html/giphy.gif
 
 # FROM hello-world
 # RUN rm /www/index.php
